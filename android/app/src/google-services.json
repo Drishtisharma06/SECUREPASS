@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "342303164228",
+    "project_id": "pass-vault-dc33c",
+    "storage_bucket": "pass-vault-dc33c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342303164228:android:03474ec273753893beb911",
+        "android_client_info": {
+          "package_name": "com.drish.securepass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS_BDV-2R1wrsacFpFaUOtfY9NRm90ilQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
