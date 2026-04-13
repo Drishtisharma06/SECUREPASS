@@ -1,41 +1,52 @@
-# SECUREPASS - Secure Password Vault
+**###🚀 SecurePass – Secure Password Vault**
 
-A Flutter app with passwordless email OTP login and secure password vault management. All data is encrypted and stored locally on your device.
+SecurePass is a modern Flutter-based password manager that uses passwordless OTP authentication and strong encryption to securely store and manage your credentials — all locally on your device.
 
-## Features
-
-### Authentication
-- **Passwordless Login**: Email-based signup/login with OTP verification
-- **Local OTP Generation**: 6-digit OTP generated and verified locally
-- **OTP Expiration**: 3-minute expiration with resend countdown
-- **Test Mode**: Debug mode displays generated OTP on the auth screen for easy testing
-- **Automatic Account Creation**: New accounts created on first login
-- **Account Recovery**: Login with the same email to restore all saved entries
-
-### Password Vault
-- **Secure Storage**: All passwords encrypted with AES-256-CBC encryption
-- **Password Generator**: Built-in generator with customizable length (8-32 chars)
-- **Character Types**: Choose uppercase, lowercase, numbers, and special characters
-- **Password Preview**: Toggle visibility during generation for confirmation before saving
-- **Entry Management**: Add, edit, delete, and search saved password entries
-- **Entry Details**: Store title, username/email/ID, and encrypted password
-- **Quick Actions**: Copy password to clipboard with one tap
-- **Password Masking**: Hide/reveal saved passwords with toggle
-
-### Security & Persistence
-- **Local Encryption**: All entries encrypted with email-derived keys
-- **Local Storage**: Entries saved in SharedPreferences (device storage only)
-- **Cloud Sync**: Optional Firebase Firestore integration (enabled if available)
-- **Auto Sign-Out**: Automatic logout after 5 minutes of inactivity
-- **Session Management**: Separate vault per email account
-
-## Tech Stack
-
-- **Framework**: Flutter 3.41.6
-- **Storage**: SharedPreferences (local) + Firebase Firestore (optional)
-- **Encryption**: AES-256-CBC via the `encrypt` package
-- **Authentication**: Passwordless OTP via Firebase (optional)
-
+**🔐 Key Highlights**
+🔑 Passwordless Authentication (Email OTP login)
+🛡 AES-256 Encryption for all stored passwords
+📱 Fully Local Storage (No server required)
+⚡ Fast & Lightweight Flutter App
+☁️ Optional Firebase Backup Support
+**✨ Features**
+🔓 Authentication
+Email-based login/signup with OTP
+6-digit OTP generated & verified locally
+OTP expires in 3 minutes with resend timer
+Debug mode shows OTP for testing
+Automatic account creation on first login
+**🔑 Password Vault**
+Secure encrypted password storage
+Add, edit, delete, and search entries
+Store:
+Title
+Username / Email
+Password (encrypted)
+One-tap copy to clipboard
+Show/hide password toggle
+**⚙️ Password Generator**
+Custom length (8–32 characters)
+Include:
+Uppercase
+Lowercase
+Numbers
+Special characters
+Preview before saving
+**🔒 Security & Storage**
+AES-256-CBC encryption
+Key derived from user email (SHA-256)
+Stored using SharedPreferences
+Auto logout after inactivity
+Separate vault per user
+**☁️ Optional Cloud Support**
+Firebase Firestore integration
+Backup & restore capability (if enabled)
+**🛠 Tech Stack**
+Flutter (Frontend)
+Dart
+SharedPreferences (Local Storage)
+Firebase (Optional)
+encrypt + crypto packages
 ## Setup & Installation
 
 ### Prerequisites
@@ -112,12 +123,6 @@ README.md            # This file
 - No plaintext passwords are stored or transmitted
 - OTP is generated and verified locally (no backend needed)
 
-## Future Enhancements
-
-- Real email delivery for OTP (optional backend service)
-- Biometric authentication support
-- Cross-device sync via cloud backup
-- Passkey support for modern authentication
 
 ## License
 
